@@ -1,0 +1,86 @@
+/* src/Days.css */
+.days-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 423px;
+    gap: 8px;
+    border-radius: 16px;
+    border: 2px solid #DDD5FB;
+    padding: 16px 24px;
+    background-color: white;
+    margin-top: 20px;
+}
+
+.day {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 53.57px;
+    height: 62px;
+    padding-top: 12px;
+    padding-bottom: 8px;
+    position: relative;
+}
+
+.circle {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: #DDD5FB;
+    margin-bottom: 8px;
+}
+
+.circle.current {
+    background: #6442EF;
+}
+
+.day.current {
+    color: #6442EF;
+}
+
+.day-name {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0px;
+    text-align: center;
+    color: #A2A2A2;
+}
+
+.day-name.current {
+    color: #6442EF;
+}
+
+.day::after {
+    content: '';
+    position: absolute;
+    bottom: 15px;
+    left: -4px;
+    right: -4px;
+    height: 1.5px;
+    background-color: #E6E6E6;
+}
+
+.day.current::after {
+    background-color: #6442EF;
+}
+
+.day-icon {
+    font-size: 24px;
+    color: #DDD5FB;
+    margin-bottom: 1.5px;
+}
+
+.day-icon.completed {
+    color: #DDD5FB;
+}
+
+.day-icon.focused {
+    color: #6442EF;
+}
+
+.day-icon.streaked {
+    color: #D9534F;
+}
