@@ -31,10 +31,9 @@ npm run start
 cd frontend
 npm run start
 ```
-3. Export the REACT_APP_STREAK_NUMBER environment variable based on the case you want to test. e.g. `EXPORT REACT_APP_STREAK_NUMBER=1`
-4. Open your browser and navigate to `http://localhost:3000`
-5. You should see the streak app displayed with the streak data for the streak number you exported.
-6. Switch through cases by changing the path to the streak number you want to test. e.g. `http://localhost:3000/1`
+3. Open your browser and navigate to `http://localhost:3000`
+4. You should see the streak app displayed with the streak data for the streak number you exported.
+5. Switch through cases by changing the path to the streak number you want to test. e.g. `http://localhost:3000/1` (Default is 1)
 
 
 ### Test Cases:
