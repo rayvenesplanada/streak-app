@@ -10,7 +10,7 @@ This is a simple streak app that displays 7 days of streak data. The data is fet
 ## Installation
 1. Clone the repository
 ```bash
-git clone https://github.com/yourusername/streak-app.git
+git clone https://github.com/rayvenesplanada/streak-app.git
 ```
 2. Install the dependencies in both the frontend and backend folders
 ```bash
