@@ -77,10 +77,26 @@
     color: #DDD5FB;
 }
 
-.day-icon.focused {
+.day-icon.current.completed {
     color: #6442EF;
 }
 
 .day-icon.streaked {
-    color: #D9534F;
+    color: #FF4500;
+}
+
+.day-icon.at-risk {
+    color: #c2e1ff;
+}
+
+.day-icon.current.at-risk {
+    color: #5aa8fc;
+}
+
+.day-icon.incomplete {
+color: #DDD5FB; /* Light purple */
+}
+
+.day-icon.current.incomplete {
+color: #6442EF; /* Bright purple for focused incomplete */
 }

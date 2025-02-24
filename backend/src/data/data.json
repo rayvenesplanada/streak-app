@@ -1,0 +1,187 @@
+[
+    [
+        {
+            "date": "2025-02-24",
+            "activities": ["activity1", "activity2"],
+            "state": "UNSET"
+        },
+        {
+            "date": "2025-02-23",
+            "activities": [],
+            "state": "AT_RISK"
+        },
+        {
+            "date": "2025-02-22",
+            "activities": ["activity3"],
+            "state": "COMPLETED"
+        },
+        {
+            "date": "2025-02-21",
+            "activities": ["activity4"],
+            "state": "COMPLETED"
+        },
+        {
+            "date": "2025-02-20",
+            "activities": ["activity5"],
+            "state": "COMPLETED"
+        },
+        {
+            "date": "2025-02-19",
+            "activities": ["activity6"],
+            "state": "COMPLETED"
+        },
+        {
+            "date": "2025-02-18",
+            "activities": [],
+            "state": "INCOMPLETE"
+        }
+    ],
+    [
+        {
+            "date": "2025-02-24",
+            "activities": ["activity1"],
+            "state": "UNSET"
+        },
+        {
+            "date": "2025-02-23",
+            "activities": [],
+            "state": "AT_RISK"
+        },
+        {
+            "date": "2025-02-22",
+            "activities": ["activity2"],
+            "state": "COMPLETED"
+        },
+        {
+            "date": "2025-02-21",
+            "activities": ["activity3"],
+            "state": "COMPLETED"
+        },
+        {
+            "date": "2025-02-20",
+            "activities": ["activity4"],
+            "state": "COMPLETED"
+        },
+        {
+            "date": "2025-02-19",
+            "activities": ["activity5"],
+            "state": "COMPLETED"
+        },
+        {
+            "date": "2025-02-18",
+            "activities": [],
+            "state": "INCOMPLETE"
+        }
+    ],
+    [
+        {
+            "date": "2025-02-24",
+            "activities": [],
+            "state": "UNSET"
+        },
+        {
+            "date": "2025-02-23",
+            "activities": [],
+            "state": "AT_RISK"
+        },
+        {
+            "date": "2025-02-22",
+            "activities": [],
+            "state": "AT_RISK"
+        },
+        {
+            "date": "2025-02-21",
+            "activities": ["activity1"],
+            "state": "COMPLETED"
+        },
+        {
+            "date": "2025-02-20",
+            "activities": ["activity2"],
+            "state": "COMPLETED"
+        },
+        {
+            "date": "2025-02-19",
+            "activities": ["activity3"],
+            "state": "COMPLETED"
+        },
+        {
+            "date": "2025-02-18",
+            "activities": [],
+            "state": "INCOMPLETE"
+        }
+    ],
+    [
+        {
+            "date": "2025-02-24",
+            "activities": ["activity1", "activity2", "activity3"],
+            "state": "UNSET"
+        },
+        {
+            "date": "2025-02-23",
+            "activities": [],
+            "state": "AT_RISK"
+        },
+        {
+            "date": "2025-02-22",
+            "activities": [],
+            "state": "AT_RISK"
+        },
+        {
+            "date": "2025-02-21",
+            "activities": ["activity1"],
+            "state": "COMPLETED"
+        },
+        {
+            "date": "2025-02-20",
+            "activities": [],
+            "state": "INCOMPLETE"
+        },
+        {
+            "date": "2025-02-19",
+            "activities": [],
+            "state": "COMPLETED"
+        },
+        {
+            "date": "2025-02-18",
+            "activities": [],
+            "state": "INCOMPLETE"
+        }
+    ],
+    [
+        {
+            "date": "2025-02-24",
+            "activities": ["activity1", "activity2", "activity3"],
+            "state": "UNSET"
+        },
+        {
+            "date": "2025-02-23",
+            "activities": ["activity4"],
+            "state": "COMPLETED"
+        },
+        {
+            "date": "2025-02-22",
+            "activities": ["activity1"],
+            "state": "COMPLETED"
+        },
+        {
+            "date": "2025-02-21",
+            "activities": ["activity1"],
+            "state": "COMPLETED"
+        },
+        {
+            "date": "2025-02-20",
+            "activities": [],
+            "state": "INCOMPLETE"
+        },
+        {
+            "date": "2025-02-19",
+            "activities": [],
+            "state": "AT_RISK"
+        },
+        {
+            "date": "2025-02-18",
+            "activities": [],
+            "state": "AT_RISK"
+        }
+    ]
+] 
