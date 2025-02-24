@@ -50,6 +50,12 @@ npm run start
 4. When the streak is broken, the streak number is reset to 0.
 5. API always returns a sorted list of streaks from recent to oldest. So this means the first entry is always the current day.
 
+### Improvements
+1. Use a database like Firestore to store the streak data.
+2. Add user sessions, authentication, and authorization to distinguish streaks between users.
+3. Add OAuth tokens to authenticate API requests.
+4. Implement better logging strategies.
+
 ### Libraries used
 **For frontend:**
 - moment - date formatting and comparison
