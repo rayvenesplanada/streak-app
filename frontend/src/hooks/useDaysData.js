@@ -1,28 +1,33 @@
 import { useEffect, useState } from 'react';
+import axios from 'axios';
 
 const useDaysData = () => {
   const [streakData, setStreakData] = useState(null);
+  const [error, setError] = useState(null);
 
   useEffect(() => {
     const fetchData = async () => {
       try {
         const apiUrl = process.env.REACT_APP_API_URL || 'http://localhost:3000';
-        // const streakNumber = process.env.REACT_APP_STREAK_NUMBER || '1'; // Use 'default' if the env variable is not set
-        await new Promise(resolve => setTimeout(resolve, 250));
-        const url = `${apiUrl}/streaks/1`;
-        const response = await fetch(url);
-        const data = await response.json();
 
-        setStreakData(data);
+        // Get case from URL for testing purposes
+        const pathSegments = window.location.pathname.split('/');
+        const streakNumber = pathSegments[1] || '1';
+
+        await new Promise(resolve => setTimeout(resolve, 250)); // Delay for testing
+        const url = `${apiUrl}/streaks/${streakNumber}`;
+        const response = await axios.get(url);
+
+        setStreakData(response.data);
       } catch (error) {
-        console.error('Error fetching streak data:', error);
+        setError(error.response ? error.response.data : error.message);
       }
     };
 
     fetchData();
   }, []);
 
-  return streakData;
+  return { streakData, error };
 };
 
 export { useDaysData }; 
