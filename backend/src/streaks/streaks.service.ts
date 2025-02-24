@@ -92,6 +92,10 @@ export class StreaksService {
         let todayStreak = streaks[0];
         todayStreak.state = StreakState.UNSET; 
 
+        if (streaks.length != 7) {
+            throw new Error("Streaks array should contain exactly 7 days of data.");
+        }
+
         streaks.sort((a, b) => moment(b.date).diff(moment(a.date)));
 
         if (todayStreak?.date !== today) {
@@ -106,7 +110,7 @@ export class StreaksService {
             const curState = streaks[i]?.state || StreakState.INCOMPLETE;
 
             if (!this.areConsecutiveDays(today, streaks[i].date, i)) {
-                throw new Error(`Streaks are not consecutive days at index ${i}.`);
+                throw new Error(`Missing dates: Streaks are not consecutive days at index ${i}.`);
             }
 
             if (curState === StreakState.AT_RISK) {
